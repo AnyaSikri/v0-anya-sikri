@@ -29,7 +29,7 @@ function InlineLink({
 export default function AboutPage() {
   return (
     <article>
-      <h1 className="text-2xl font-medium tracking-tight">about</h1>
+      <h1 className="text-2xl font-serif font-medium tracking-tight">about</h1>
 
       <div className="mt-6 space-y-4 text-base leading-relaxed text-foreground/85">
         <p>
@@ -40,13 +40,13 @@ export default function AboutPage() {
 
         <p>
           {"i've worked across pharma, consulting, and startups\u2014from developing AI-powered patient safety systems at "}
-          <InlineLink href="#">Rigel Pharmaceuticals</InlineLink>
+          <InlineLink href="https://www.rigel.com">Rigel Pharmaceuticals</InlineLink>
           {" to building LLM evaluation frameworks at "}
-          <InlineLink href="#">PwC</InlineLink>
+          <InlineLink href="https://www.pwc.com">PwC</InlineLink>
           {". i'm also a researcher at the "}
-          <InlineLink href="#">Innovative Genomics Institute</InlineLink>
+          <InlineLink href="https://innovativegenomics.org">Innovative Genomics Institute</InlineLink>
           {" and an analyst at "}
-          <InlineLink href="#">Health Engine</InlineLink>
+          <InlineLink href="https://www.healthengineberkeley.com">Health Engine</InlineLink>
           {", berkeley's health-tech startup accelerator."}
         </p>
 

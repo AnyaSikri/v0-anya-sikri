@@ -17,7 +17,7 @@ export function Navigation() {
     <header className="mb-12">
       <nav className="flex items-center gap-5">
         <Link href="/" className="mr-auto">
-          <span className="text-lg font-medium tracking-tight text-foreground">
+          <span className="text-lg font-serif font-medium tracking-tight text-foreground">
             anya
           </span>
         </Link>

@@ -1,24 +1,26 @@
 import type { Metadata } from 'next'
-import { EB_Garamond } from 'next/font/google'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Inter, Libre_Baskerville, JetBrains_Mono } from 'next/font/google'
 import { Navigation } from '@/components/navigation'
 
 import './globals.css'
 
-const ebGaramond = EB_Garamond({
+const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-eb-garamond',
+  variable: '--font-inter',
   display: 'swap',
 })
 
-const geist = Geist({
+const libreBaskerville = Libre_Baskerville({
   subsets: ['latin'],
-  variable: '--font-geist',
+  weight: ['400', '700'],
+  variable: '--font-libre-baskerville',
+  display: 'swap',
 })
 
-const geistMono = Geist_Mono({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ['latin'],
-  variable: '--font-geist-mono',
+  variable: '--font-jetbrains-mono',
+  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -34,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ebGaramond.variable} ${geist.variable} ${geistMono.variable} font-serif antialiased`}
+        className={`${inter.variable} ${libreBaskerville.variable} ${jetbrainsMono.variable} font-sans antialiased`}
       >
         <div className="mx-auto max-w-xl px-6 py-12 md:py-20">
           <Navigation />

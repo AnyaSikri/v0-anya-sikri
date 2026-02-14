@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react"
 const workExperience = [
   {
     title: "Rigel Pharmaceuticals",
+    href: "https://www.rigel.com",
     role: "Software Development Engineer",
     location: "San Francisco, CA",
     period: "Aug 2025 - Present",
@@ -12,6 +13,7 @@ const workExperience = [
   },
   {
     title: "Ishara Investments",
+    href: "https://www.isharainvestments.com",
     role: "Tech Research Analyst Intern",
     location: "San Francisco, CA",
     period: "Aug 2025 - Present",
@@ -20,6 +22,7 @@ const workExperience = [
   },
   {
     title: "PwC",
+    href: "https://www.pwc.com",
     role: "Cloud Engineering and Data Intern",
     location: "San Francisco, CA",
     period: "Jun 2025 - Aug 2025",
@@ -28,6 +31,7 @@ const workExperience = [
   },
   {
     title: "Abbott",
+    href: "https://www.abbott.com",
     role: "Data Science and Strategy Intern",
     location: "Berkeley, CA",
     period: "Aug 2024 - Dec 2024",
@@ -36,6 +40,7 @@ const workExperience = [
   },
   {
     title: "Ayla Networks",
+    href: "https://www.aylanetworks.com",
     role: "Software Engineering Intern",
     location: "San Jose, CA",
     period: "May 2024 - Aug 2024",
@@ -44,6 +49,7 @@ const workExperience = [
   },
   {
     title: "Stanford Center Clinical Research",
+    href: "https://med.stanford.edu/sccr.html",
     role: "Data Science and Strategy Intern",
     location: "Palo Alto, CA",
     period: "May 2023 - Aug 2023",
@@ -55,6 +61,7 @@ const workExperience = [
 const berkeleyExperience = [
   {
     title: "Innovative Genomics Institute",
+    href: "https://innovativegenomics.org",
     role: "Researcher, Braverman Lab",
     location: "Berkeley, CA",
     period: "Jun 2025 - Present",
@@ -63,6 +70,7 @@ const berkeleyExperience = [
   },
   {
     title: "Health Engine",
+    href: "https://www.healthengineberkeley.com",
     role: "Analyst",
     location: "Berkeley, CA",
     period: "Dec 2024 - Present",
@@ -74,7 +82,7 @@ const berkeleyExperience = [
 export default function HomePage() {
   return (
     <article className="space-y-6">
-      <h1 className="text-2xl font-medium tracking-tight">
+      <h1 className="text-2xl font-serif font-medium tracking-tight">
         {"hey, i'm anya"}
       </h1>
 
@@ -87,13 +95,13 @@ export default function HomePage() {
 
         <p>
           {"previously: built AI-powered patient safety systems @ "}
-          <InlineLink href="#">rigel pharmaceuticals</InlineLink>
+          <InlineLink href="https://www.rigel.com">rigel pharmaceuticals</InlineLink>
           {", LLM evaluation frameworks @ "}
-          <InlineLink href="#">pwc</InlineLink>
+          <InlineLink href="https://www.pwc.com">pwc</InlineLink>
           {", biotech trend detection @ "}
-          <InlineLink href="#">ishara investments</InlineLink>
+          <InlineLink href="https://www.isharainvestments.com">ishara investments</InlineLink>
           {", & research @ "}
-          <InlineLink href="#">innovative genomics institute</InlineLink>
+          <InlineLink href="https://innovativegenomics.org">innovative genomics institute</InlineLink>
           {"."}
         </p>
 
@@ -133,36 +141,43 @@ export default function HomePage() {
 
 function ExperienceItem({
   title,
+  href,
   role,
   period,
   description,
 }: {
   title: string
+  href: string
   role: string
   location: string
   period: string
   description: string
 }) {
   return (
-    <div className="group rounded-md px-2 py-2.5 -mx-2 transition-colors hover:bg-foreground/5">
+    <Link
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block rounded-md px-2 py-2.5 -mx-2 transition-colors hover:bg-foreground/5"
+    >
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
           <span className="flex items-center gap-2">
             <span className="text-base font-medium">{title}</span>
             <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100 shrink-0" />
           </span>
-          <span className="block font-sans text-sm text-muted-foreground">
+          <span className="block text-sm text-muted-foreground">
             {role}
           </span>
         </div>
-        <span className="font-sans text-sm text-muted-foreground whitespace-nowrap shrink-0">
+        <span className="text-sm text-muted-foreground whitespace-nowrap shrink-0">
           {period}
         </span>
       </div>
       <p className="mt-1.5 text-sm leading-relaxed text-foreground/70">
         {description}
       </p>
-    </div>
+    </Link>
   )
 }
 
