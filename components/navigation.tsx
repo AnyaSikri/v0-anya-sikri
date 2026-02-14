@@ -18,7 +18,7 @@ export function Navigation() {
       <nav className="flex items-center gap-5">
         <Link href="/" className="mr-auto">
           <span className="text-lg font-medium tracking-tight text-foreground">
-            saurish
+            anya
           </span>
         </Link>
         {links.map((link) => (

@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "the fragmentarium | Saurish",
+  title: "the fragmentarium | Anya",
   description: "an everlasting collection of powerful aphorisms.",
 }
 

@@ -22,8 +22,8 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Saurish Srivastava',
-  description: 'Personal website of Saurish Srivastava',
+  title: 'Anya Sikri',
+  description: 'Personal website of Anya Sikri',
 }
 
 export default function RootLayout({

@@ -3,8 +3,8 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About | Saurish",
-  description: "About Saurish Srivastava",
+  title: "About | Anya",
+  description: "About Anya Sikri",
 }
 
 function InlineLink({
@@ -33,24 +33,26 @@ export default function AboutPage() {
 
       <div className="mt-6 space-y-4 text-base leading-relaxed text-foreground/85">
         <p>
-          {"i'm an undergraduate at princeton concentrating in computer science, mathematics, and philosophy. i have many interests, but my main focuses lie in probability theory and developing ethical ai. i'm currently conducting research on neural networks in astrophysics at the "}
-          <InlineLink href="#">Princeton Astro Data Lab</InlineLink>
-          {"."}
+          {"i'm an undergraduate at "}
+          <InlineLink href="https://berkeley.edu">UC Berkeley</InlineLink>
+          {" studying data science, bioengineering, and public health. my interests span the intersection of AI, healthcare, and data\u2014from building intelligent systems for clinical research to analyzing biotech markets."}
         </p>
 
         <p>
-          {"on a different front, i run a nonprofit organization called "}
-          <InlineLink href="#">Project enVision U.S.</InlineLink>
-          {", where i help incubate grassroots movements for the youth. i also lead a philosophy journal called "}
-          <InlineLink href="#">Dialexicon</InlineLink>
-          {" that's in its third year of publishing. previously, i was the host of "}
-          <InlineLink href="#">its podcast</InlineLink>
-          {", where i got to chat with the top minds in philosophy from across the globe."}
+          {"i've worked across pharma, consulting, and startups\u2014from developing AI-powered patient safety systems at "}
+          <InlineLink href="#">Rigel Pharmaceuticals</InlineLink>
+          {" to building LLM evaluation frameworks at "}
+          <InlineLink href="#">PwC</InlineLink>
+          {". i'm also a researcher at the "}
+          <InlineLink href="#">Innovative Genomics Institute</InlineLink>
+          {" and an analyst at "}
+          <InlineLink href="#">Health Engine</InlineLink>
+          {", berkeley's health-tech startup accelerator."}
         </p>
 
         <p>
           {"feel free to "}
-          <InlineLink href="mailto:saurish@princeton.edu">reach out</InlineLink>
+          <InlineLink href="mailto:anya.sikri@berkeley.edu">reach out</InlineLink>
           {" if your interests align with mine \u2014 always happy to connect!"}
         </p>
       </div>
@@ -58,7 +60,7 @@ export default function AboutPage() {
       <div className="mt-8">
         <Image
           src="/images/profile.jpg"
-          alt="A photo of Saurish"
+          alt="A photo of Anya"
           width={600}
           height={400}
           className="rounded-lg"
