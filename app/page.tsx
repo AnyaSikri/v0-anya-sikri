@@ -83,7 +83,7 @@ export default function HomePage() {
   return (
     <article className="space-y-6">
       <h1 className="text-2xl font-serif font-medium tracking-tight">
-        {"hey, i'm anya"}
+        anya sikri
       </h1>
 
       <div className="space-y-4 text-base leading-relaxed text-foreground/80">
