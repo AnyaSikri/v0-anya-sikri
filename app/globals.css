@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 0 0% 15%;
+    --card: 40 20% 97%;
+    --card-foreground: 0 0% 15%;
+    --popover: 40 20% 97%;
+    --popover-foreground: 0 0% 15%;
+    --primary: 0 0% 15%;
+    --primary-foreground: 40 20% 97%;
+    --secondary: 40 10% 93%;
+    --secondary-foreground: 0 0% 15%;
+    --muted: 40 10% 93%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 40 10% 93%;
+    --accent-foreground: 0 0% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 40 10% 85%;
+    --input: 40 10% 85%;
+    --ring: 0 0% 15%;
+    --link: 220 60% 50%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Prose styling for blog posts */
+.prose-blog {
+  line-height: 1.75;
+}
+
+.prose-blog h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-blog p {
+  margin-bottom: 1rem;
+}
+
+.prose-blog a {
+  color: hsl(var(--link));
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-blog a:hover {
+  opacity: 0.8;
+}
