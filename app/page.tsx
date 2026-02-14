@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
 
 const workExperience = [
@@ -90,7 +91,7 @@ export default function HomePage() {
         <p>
           {"i'm studying data science, bioengineering, and public health @ "}
           <InlineLink href="https://berkeley.edu">UC Berkeley</InlineLink>
-          {". i'm interested in the intersection of AI, healthcare, and data\u2014building intelligent systems for clinical research and analyzing biotech markets."}
+          {". i'm interested in venture capital and startups in healthtech\u2014building intelligent systems for clinical research and analyzing biotech markets."}
         </p>
 
         <p>
@@ -114,9 +115,9 @@ export default function HomePage() {
         </p>
       </div>
 
-      <section className="pt-2">
-        <h2 className="mb-4 text-sm font-sans font-medium text-muted-foreground">
-          work experience:
+      <section className="pt-4">
+        <h2 className="mb-4 text-lg font-serif font-medium text-foreground">
+          work experience
         </h2>
         <div className="space-y-1">
           {workExperience.map((exp) => (
@@ -125,10 +126,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="pt-2">
-        <h2 className="mb-4 text-sm font-sans font-medium text-muted-foreground">
-          berkeley:
-        </h2>
+      <section className="pt-4">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-lg font-serif font-medium text-foreground">
+            berkeley
+          </h2>
+          <Link
+            href="/berkeley"
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            {"view all \u2192"}
+          </Link>
+        </div>
         <div className="space-y-1">
           {berkeleyExperience.map((exp) => (
             <ExperienceItem key={exp.title} {...exp} />
@@ -163,6 +172,14 @@ function ExperienceItem({
       <div className="flex items-start justify-between gap-4">
         <div className="min-w-0">
           <span className="flex items-center gap-2">
+            <Image
+              src={`https://www.google.com/s2/favicons?domain=${new URL(href).hostname}&sz=32`}
+              alt=""
+              width={16}
+              height={16}
+              className="rounded-sm shrink-0"
+              unoptimized
+            />
             <span className="text-base font-medium">{title}</span>
             <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100 shrink-0" />
           </span>

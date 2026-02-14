@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 
 const links = [
   { href: "/", label: "home" },
-  { href: "/writing", label: "writing" },
+  { href: "/berkeley", label: "berkeley" },
   { href: "/about", label: "about" },
 ]
 
@@ -18,7 +18,7 @@ export function Navigation() {
       <nav className="flex items-center gap-5">
         <Link href="/" className="mr-auto">
           <span className="text-lg font-serif font-medium tracking-tight text-foreground">
-            anya
+            Anya
           </span>
         </Link>
         {links.map((link) => (
