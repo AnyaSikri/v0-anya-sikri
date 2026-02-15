@@ -14,7 +14,7 @@ const workExperience = [
   },
   {
     title: "Ishara Investments",
-    href: "https://www.isharainvestments.com",
+    href: "https://www.ishara.co",
     role: "Tech Research Analyst Intern",
     location: "San Francisco, CA",
     period: "Aug 2025 - Present",
@@ -70,6 +70,15 @@ const berkeleyExperience = [
       "Conducting high-throughput drug screening on patient-derived colorectal cancer organoids. Built XML-to-CSV data transformation pipeline to batch-process FlowJo workspace templates, reducing manual intervention time by 90%.",
   },
   {
+    title: "UCSF",
+    href: "https://www.medrxiv.org/content/10.1101/2025.02.14.25322163v1.full",
+    role: "Research Contributor",
+    location: "San Francisco, CA",
+    period: "2025",
+    description:
+      "Co-authored research published on medRxiv investigating clinical and genomic data analysis. Contributing to interdisciplinary work bridging data science and biomedical research.",
+  },
+  {
     title: "Health Engine",
     href: "https://www.healthengineberkeley.com",
     role: "Analyst",
@@ -82,32 +91,32 @@ const berkeleyExperience = [
 
 export default function HomePage() {
   return (
-    <article className="space-y-6">
+    <article className="space-y-8">
       <h1 className="text-2xl font-serif font-medium tracking-tight">
-        anya sikri
+        Anya Sikri
       </h1>
 
       <div className="space-y-4 text-base leading-relaxed text-foreground/80">
         <p>
-          {"i'm studying data science, bioengineering, and public health @ "}
+          {"I'm studying Data Science, Bioengineering, and Public Health at "}
           <InlineLink href="https://berkeley.edu">UC Berkeley</InlineLink>
-          {". i'm interested in venture capital and startups in healthtech\u2014building intelligent systems for clinical research and analyzing biotech markets."}
+          {". I'm interested in venture capital and startups in healthtech \u2014 building intelligent systems for clinical research and analyzing biotech markets."}
         </p>
 
         <p>
-          {"previously: built AI-powered patient safety systems @ "}
-          <InlineLink href="https://www.rigel.com">rigel pharmaceuticals</InlineLink>
-          {", LLM evaluation frameworks @ "}
-          <InlineLink href="https://www.pwc.com">pwc</InlineLink>
-          {", biotech trend detection @ "}
-          <InlineLink href="https://www.isharainvestments.com">ishara investments</InlineLink>
-          {", & research @ "}
-          <InlineLink href="https://innovativegenomics.org">innovative genomics institute</InlineLink>
+          {"Previously: built AI-powered patient safety systems at "}
+          <InlineLink href="https://www.rigel.com">Rigel Pharmaceuticals</InlineLink>
+          {", LLM evaluation frameworks at "}
+          <InlineLink href="https://www.pwc.com">PwC</InlineLink>
+          {", biotech trend detection at "}
+          <InlineLink href="https://www.ishara.co">Ishara Investments</InlineLink>
+          {", and research at the "}
+          <InlineLink href="https://innovativegenomics.org">Innovative Genomics Institute</InlineLink>
           {"."}
         </p>
 
         <p>
-          {"feel free to reach out at "}
+          {"Feel free to reach out at "}
           <InlineLink href="mailto:anya.sikri@berkeley.edu">
             anya.sikri@berkeley.edu
           </InlineLink>
@@ -115,9 +124,9 @@ export default function HomePage() {
         </p>
       </div>
 
-      <section className="pt-4">
+      <section>
         <h2 className="mb-4 text-lg font-serif font-medium text-foreground">
-          work experience
+          Work Experience
         </h2>
         <div className="space-y-1">
           {workExperience.map((exp) => (
@@ -126,16 +135,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="pt-4">
+      <section>
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-lg font-serif font-medium text-foreground">
-            berkeley
+            Berkeley + Research
           </h2>
           <Link
             href="/berkeley"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
-            {"view all \u2192"}
+            {"View all \u2192"}
           </Link>
         </div>
         <div className="space-y-1">
@@ -162,6 +171,13 @@ function ExperienceItem({
   period: string
   description: string
 }) {
+  const faviconDomain =
+    title === "Ishara Investments"
+      ? "bloomberg.com"
+      : title === "UCSF"
+        ? "ucsf.edu"
+        : new URL(href).hostname
+
   return (
     <Link
       href={href}
@@ -173,7 +189,7 @@ function ExperienceItem({
         <div className="min-w-0">
           <span className="flex items-center gap-2">
             <Image
-              src={`https://www.google.com/s2/favicons?domain=${new URL(href).hostname}&sz=32`}
+              src={`https://www.google.com/s2/favicons?domain=${faviconDomain}&sz=32`}
               alt=""
               width={16}
               height={16}
@@ -183,7 +199,7 @@ function ExperienceItem({
             <span className="text-base font-medium">{title}</span>
             <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100 shrink-0" />
           </span>
-          <span className="block text-sm text-muted-foreground">
+          <span className="block text-sm text-muted-foreground mt-0.5 pl-6">
             {role}
           </span>
         </div>
@@ -191,7 +207,7 @@ function ExperienceItem({
           {period}
         </span>
       </div>
-      <p className="mt-1.5 text-sm leading-relaxed text-foreground/70">
+      <p className="mt-1.5 text-sm leading-relaxed text-foreground/70 pl-6">
         {description}
       </p>
     </Link>

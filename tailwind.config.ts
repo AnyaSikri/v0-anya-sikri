@@ -47,9 +47,9 @@ const config: Config = {
         link: 'hsl(var(--link))',
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-libre-baskerville)', 'Georgia', 'serif'],
-        mono: ['var(--font-jetbrains-mono)', 'monospace'],
+        sans: ['var(--font-source-sans)', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-lora)', 'Georgia', 'serif'],
+        mono: ['var(--font-fira-code)', 'monospace'],
       },
       borderRadius: {
         lg: 'var(--radius)',

@@ -1,25 +1,24 @@
 import type { Metadata } from 'next'
-import { Inter, Libre_Baskerville, JetBrains_Mono } from 'next/font/google'
+import { Source_Sans_3, Lora, Fira_Code } from 'next/font/google'
 import { Navigation } from '@/components/navigation'
 
 import './globals.css'
 
-const inter = Inter({
+const sourceSans = Source_Sans_3({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-source-sans',
   display: 'swap',
 })
 
-const libreBaskerville = Libre_Baskerville({
+const lora = Lora({
   subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-libre-baskerville',
+  variable: '--font-lora',
   display: 'swap',
 })
 
-const jetbrainsMono = JetBrains_Mono({
+const firaCode = Fira_Code({
   subsets: ['latin'],
-  variable: '--font-jetbrains-mono',
+  variable: '--font-fira-code',
   display: 'swap',
 })
 
@@ -36,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${libreBaskerville.variable} ${jetbrainsMono.variable} font-sans antialiased`}
+        className={`${sourceSans.variable} ${lora.variable} ${firaCode.variable} font-sans antialiased`}
       >
         <div className="mx-auto max-w-xl px-6 py-12 md:py-20">
           <Navigation />
