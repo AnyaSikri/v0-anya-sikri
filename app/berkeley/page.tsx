@@ -14,7 +14,7 @@ const berkeleyExperience = [
     href: "https://innovativegenomics.org",
     role: "Researcher, Braverman Lab",
     location: "Berkeley, CA",
-    period: "Jun 2025 - Present",
+    period: "2025 - Present",
     description:
       "Conducting high-throughput drug screening on patient-derived colorectal cancer organoids. Built XML-to-CSV data transformation pipeline to batch-process FlowJo workspace templates and extract classifications, reducing manual intervention time by 90% from sample acquisition to statistical analysis for time-sensitive therapeutic screening.",
   },
@@ -32,7 +32,7 @@ const berkeleyExperience = [
     href: "https://www.healthengineberkeley.com",
     role: "Analyst",
     location: "Berkeley, CA",
-    period: "Dec 2024 - Present",
+    period: "2024 - Present",
     description:
       "UC Berkeley student-run startup accelerator facilitating health-tech innovation with over 60 present and past cohort startups. Managing accelerator experience for cohort startup VitVio. Developing a semantic search and recommendation engine using MongoDB, SentenceTransformer embeddings, and FAISS indexing to improve mentor-startup matching and due diligence workflows.",
   },
