@@ -87,6 +87,24 @@ const berkeleyExperience = [
     description:
       "UC Berkeley student-run startup accelerator facilitating health-tech innovation with over 60 cohort startups. Developing a semantic search and recommendation engine using MongoDB, SentenceTransformer embeddings, and FAISS indexing.",
   },
+  {
+    title: "Big Data at Berkeley",
+    href: "https://bd.studentorg.berkeley.edu/",
+    role: "Consultant, Online Course Department",
+    location: "Berkeley, CA",
+    period: "2023 - Present",
+    description:
+      "Developed the Data Science Demystified online course curriculum, reaching 500+ learners across 15+ countries. Designed module content covering data wrangling, visualization, and machine learning fundamentals for non-technical audiences.",
+  },
+  {
+    title: "Phoenix Consulting",
+    href: "https://phoenix.berkeley.edu/",
+    role: "Project Manager",
+    location: "Berkeley, CA",
+    period: "2023 - Present",
+    description:
+      "Led a team of 4-6 analysts on health sector consulting engagements for biotech and life sciences clients. Managed project timelines, client deliverables, and cross-functional coordination across drug pipeline analysis and market strategy projects.",
+  },
 ]
 
 export default function HomePage() {
@@ -100,17 +118,17 @@ export default function HomePage() {
         <p>
           {"I'm studying Data Science, Bioengineering, and Public Health at "}
           <InlineLink href="https://berkeley.edu">UC Berkeley</InlineLink>
-          {". I'm interested in venture capital and startups in healthtech \u2014 building intelligent systems for clinical research and analyzing biotech markets."}
+          {". I build at the intersection of startups, venture capital, and healthtech, from intelligent systems for clinical research to tools for biotech market analysis."}
         </p>
 
         <p>
-          {"Previously: built AI-powered patient safety systems at "}
+          {"I've built AI-powered patient safety systems at "}
           <InlineLink href="https://www.rigel.com">Rigel Pharmaceuticals</InlineLink>
           {", LLM evaluation frameworks at "}
           <InlineLink href="https://www.pwc.com">PwC</InlineLink>
           {", biotech trend detection at "}
           <InlineLink href="https://www.ishara.co">Ishara Investments</InlineLink>
-          {", and research at the "}
+          {", and research tools at the "}
           <InlineLink href="https://innovativegenomics.org">Innovative Genomics Institute</InlineLink>
           {"."}
         </p>
@@ -151,6 +169,27 @@ export default function HomePage() {
           {berkeleyExperience.map((exp) => (
             <ExperienceItem key={exp.title} {...exp} />
           ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 className="mb-4 text-lg font-serif font-medium text-foreground">
+          Projects
+        </h2>
+        <div className="space-y-1">
+          <div className="block rounded-md px-2 py-2.5 -mx-2">
+            <div className="flex items-start justify-between gap-4">
+              <div className="min-w-0">
+                <span className="flex items-center gap-2">
+                  <span className="text-base font-medium">Due Diligence Tool</span>
+                  <span className="text-xs text-muted-foreground bg-foreground/5 px-2 py-0.5 rounded-full">Coming Soon</span>
+                </span>
+              </div>
+            </div>
+            <p className="mt-1.5 text-sm leading-relaxed text-foreground/70">
+              An AI-powered due diligence and market analysis tool for venture capital workflows.
+            </p>
+          </div>
         </div>
       </section>
     </article>
