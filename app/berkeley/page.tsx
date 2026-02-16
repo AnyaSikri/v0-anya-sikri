@@ -38,7 +38,7 @@ const berkeleyExperience = [
   },
   {
     title: "Big Data at Berkeley",
-    href: "https://bd.studentorg.berkeley.edu/",
+    href: "https://bd.studentorg.berkeley.edu",
     role: "Consultant, Online Course Department",
     location: "Berkeley, CA",
     period: "2023 - Present",
@@ -47,7 +47,7 @@ const berkeleyExperience = [
   },
   {
     title: "Phoenix Consulting",
-    href: "https://phoenix.berkeley.edu/",
+    href: "https://phoenix.berkeley.edu",
     role: "Project Manager",
     location: "Berkeley, CA",
     period: "2023 - Present",
