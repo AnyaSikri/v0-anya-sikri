@@ -35,11 +35,11 @@ export default function AboutPage() {
         <p>
           {"I'm an undergraduate at "}
           <InlineLink href="https://berkeley.edu">UC Berkeley</InlineLink>
-          {" studying Data Science, Bioengineering, and Public Health. My interests span venture capital and startups in healthtech \u2014 from building intelligent systems for clinical research to analyzing biotech markets."}
+          {" studying Data Science, Bioengineering, and Public Health. I build at the intersection of venture capital, startups, and healthtech, from intelligent clinical research systems to biotech market analysis tools."}
         </p>
 
         <p>
-          {"I've worked across pharma, consulting, and startups \u2014 from developing AI-powered patient safety systems at "}
+          {"I've worked across pharma, consulting, and startups, from developing AI-powered patient safety systems at "}
           <InlineLink href="https://www.rigel.com">Rigel Pharmaceuticals</InlineLink>
           {" to building LLM evaluation frameworks at "}
           <InlineLink href="https://www.pwc.com">PwC</InlineLink>
@@ -53,7 +53,7 @@ export default function AboutPage() {
         <p>
           {"Feel free to "}
           <InlineLink href="mailto:anya.sikri@berkeley.edu">reach out</InlineLink>
-          {" if your interests align with mine \u2014 always happy to connect!"}
+          {" if your interests align with mine, always happy to connect!"}
         </p>
       </div>
 
