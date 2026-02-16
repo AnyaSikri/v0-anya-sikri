@@ -36,6 +36,24 @@ const berkeleyExperience = [
     description:
       "UC Berkeley student-run startup accelerator facilitating health-tech innovation with over 60 present and past cohort startups. Managing accelerator experience for cohort startup VitVio. Developing a semantic search and recommendation engine using MongoDB, SentenceTransformer embeddings, and FAISS indexing to improve mentor-startup matching and due diligence workflows.",
   },
+  {
+    title: "Big Data at Berkeley",
+    href: "https://bd.studentorg.berkeley.edu/",
+    role: "Consultant, Online Course Department",
+    location: "Berkeley, CA",
+    period: "2023 - Present",
+    description:
+      "Developed the Data Science Demystified online course curriculum, reaching 500+ learners across 15+ countries. Designed module content covering data wrangling, visualization, and machine learning fundamentals for non-technical audiences.",
+  },
+  {
+    title: "Phoenix Consulting",
+    href: "https://phoenix.berkeley.edu/",
+    role: "Project Manager",
+    location: "Berkeley, CA",
+    period: "2023 - Present",
+    description:
+      "Led a team of 4-6 analysts on health sector consulting engagements for biotech and life sciences clients. Managed project timelines, client deliverables, and cross-functional coordination across drug pipeline analysis and market strategy projects.",
+  },
 ]
 
 export default function BerkeleyPage() {
