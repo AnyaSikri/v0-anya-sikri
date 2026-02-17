@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
+import profileImg from "../../public/images/profile.jpg"
 
 export const metadata: Metadata = {
   title: "About | Anya",
@@ -61,10 +62,8 @@ export default function AboutPage() {
 
       <div className="mt-8">
         <Image
-          src="/images/profile.jpg"
+          src={profileImg}
           alt="A photo of Anya"
-          width={600}
-          height={400}
           className="rounded-lg"
           priority
         />
