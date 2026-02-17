@@ -14,7 +14,7 @@ const workExperience = [
   },
   {
     title: "Ishara Investments",
-    href: "https://www.ishara.co",
+    href: "https://www.isharainvestments.com",
     role: "Tech Research Analyst Intern",
     location: "San Francisco, CA",
     period: "2025 - Present",
