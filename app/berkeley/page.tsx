@@ -29,7 +29,7 @@ const berkeleyExperience = [
   },
   {
     title: "Health Engine",
-    href: "https://www.healthengineberkeley.com",
+    href: "https://readysethealth.io",
     role: "Analyst",
     location: "Berkeley, CA",
     period: "2024 - Present",

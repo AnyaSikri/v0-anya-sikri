@@ -46,13 +46,15 @@ export default function AboutPage() {
           {". I'm also a researcher at the "}
           <InlineLink href="https://innovativegenomics.org">Innovative Genomics Institute</InlineLink>
           {" and an analyst at "}
-          <InlineLink href="https://www.healthengineberkeley.com">Health Engine</InlineLink>
+          <InlineLink href="https://readysethealth.io">Health Engine</InlineLink>
           {", Berkeley's health-tech startup accelerator."}
         </p>
 
         <p>
           {"Feel free to "}
           <InlineLink href="mailto:anya.sikri@berkeley.edu">reach out</InlineLink>
+          {" or connect on "}
+          <InlineLink href="https://www.linkedin.com/in/anyasikri/">LinkedIn</InlineLink>
           {" if your interests align with mine, always happy to connect!"}
         </p>
       </div>

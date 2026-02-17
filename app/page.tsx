@@ -80,7 +80,7 @@ const berkeleyExperience = [
   },
   {
     title: "Health Engine",
-    href: "https://www.healthengineberkeley.com",
+    href: "https://readysethealth.io",
     role: "Analyst",
     location: "Berkeley, CA",
     period: "2024 - Present",
@@ -126,8 +126,8 @@ export default function HomePage() {
           <InlineLink href="https://www.rigel.com">Rigel Pharmaceuticals</InlineLink>
           {", LLM evaluation frameworks at "}
           <InlineLink href="https://www.pwc.com">PwC</InlineLink>
-          {", biotech trend detection at "}
-          <InlineLink href="https://www.ishara.co">Ishara Investments</InlineLink>
+          {", clinical AI agents at "}
+          <InlineLink href="https://www.abbott.com">Abbott</InlineLink>
           {", and research tools at the "}
           <InlineLink href="https://innovativegenomics.org">Innovative Genomics Institute</InlineLink>
           {"."}
@@ -137,6 +137,10 @@ export default function HomePage() {
           {"Feel free to reach out at "}
           <InlineLink href="mailto:anya.sikri@berkeley.edu">
             anya.sikri@berkeley.edu
+          </InlineLink>
+          {" or connect on "}
+          <InlineLink href="https://www.linkedin.com/in/anyasikri/">
+            LinkedIn
           </InlineLink>
           {"."}
         </p>
@@ -190,6 +194,43 @@ export default function HomePage() {
               An AI-powered due diligence and market analysis tool for venture capital workflows.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 className="mb-4 text-lg font-serif font-medium text-foreground">
+          Press
+        </h2>
+        <div className="space-y-1">
+          <Link
+            href="https://www.inc.com/irina-ivanova/founders-fresh-grads-and-ai-are-reinventing-the-entry-level-job/91257327"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group block rounded-md px-2 py-2.5 -mx-2 transition-colors hover:bg-foreground/5"
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div className="min-w-0">
+                <span className="flex items-center gap-2">
+                  <Image
+                    src="https://www.google.com/s2/favicons?domain=inc.com&sz=32"
+                    alt=""
+                    width={16}
+                    height={16}
+                    className="rounded-sm shrink-0"
+                    unoptimized
+                  />
+                  <span className="text-base font-medium">Inc. Magazine</span>
+                  <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100 shrink-0" />
+                </span>
+                <span className="block text-sm text-muted-foreground mt-0.5 pl-6">
+                  Founders, Fresh Grads, and AI Are Reinventing the Entry-Level Job
+                </span>
+              </div>
+            </div>
+            <p className="mt-1.5 text-sm leading-relaxed text-foreground/70 pl-6">
+              Discussed how AI accelerates workflows by automating manual, repetitive tasks, freeing up bandwidth for higher-level thinking. Featured for building an AI-powered tool that pulls real-time clinical trial, financial, and regulatory data to accelerate investment due diligence.
+            </p>
+          </Link>
         </div>
       </section>
     </article>
